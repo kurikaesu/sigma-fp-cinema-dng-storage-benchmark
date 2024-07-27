@@ -8,6 +8,9 @@
 *.so
 *.dylib
 
+sigma-fp-cinema-dng-storage-benchmark
+main
+
 # Test binary, built with `go test -c`
 *.test
 
@@ -20,3 +23,7 @@
 # Go workspace file
 go.work
 go.work.sum
+
+# IntelliJ
+*.iml
+.idea/
