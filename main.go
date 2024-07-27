@@ -68,4 +68,8 @@ func main() {
 	writtenMiB := float32(dngSize*fileCounter) / 1024
 	log.Printf("Benchmark stopped after writing at most (%f) MiB", writtenMiB)
 	log.Printf("In GiB that would be (%f)", writtenMiB/1024)
+
+	totalSecondsWritten := float32(fileCounter) / float32(fps)
+	duration := time.Duration(totalSecondsWritten * float32(time.Second))
+	log.Printf("Total 'Recording' time is (%s)", duration)
 }
